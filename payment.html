@@ -122,7 +122,7 @@
 		<input type="submit" value="支付" class="submit" onclick="GetArgsFromHref('user_id');"/>
 	</form>
 </div>
-<script src="public/javascripts/jquery-1.8.3.min.js"></script>
+<script src="public/jquery-1.8.3.min.js"></script>
 <script>	
 	function loginCheck(){
 		if(document.PersonalInfoForm.sign_name.value==""){//输出
@@ -132,7 +132,7 @@
   			alert("报名手机号填写不能为空");
   			return false;
 		}else if(document.PersonalInfoForm.sign_mobile.value.length!=11 ){//输出
-  			alert("报名手机号填写不能少于11位");
+  			alert("报名手机号填写必须为11位");
   			return false;
   		}else{
 			alert("支付成功")
