@@ -46,10 +46,8 @@ app.get('/process_get', function (req, res) {
 				throw err;
 			} 
 		});
-  
 		connection.release();
 	});
-	
 });
 
 bot
@@ -80,28 +78,28 @@ bot
         }
 
         if (message.self()) {
-            return
+        	return
         }
         
-		if(/hello/.test(content)|| /^你好$/.test(content)){
-			message.say("你好，我是本次NodeJS技术学习交流群的机器人小N，请输入暗号【nodejs】，我将拉你进入会员群")
-			var  addSql = 'INSERT INTO pay(contact_id,contact_name,payment) VALUES(?,?,0)';
-			var  addSqlParams = [sender.id,sender.name()];
+	if(/hello/.test(content)|| /^你好$/.test(content)){
+		message.say("你好，我是本次NodeJS技术学习交流群的机器人小N，请输入暗号【nodejs】，我将拉你进入会员群")
+		var  addSql = 'INSERT INTO pay(contact_id,contact_name,payment) VALUES(?,?,0)';
+		var  addSqlParams = [sender.id,sender.name()];
 
 	        pool.getConnection(function(err, connection){  //将初次对话的id、name添入数据库，并将付款标志位置0
-				connection.query( addSql,addSqlParams,function(err, rows){
-					if(err)	{
-						throw err;
-					} 
-				});
-				connection.release();
-			})
+			connection.query( addSql,addSqlParams,function(err, rows){
+				if(err)	{
+					throw err;
+				} 
+			});
+			connection.release();
+		})
+	}
+	if(/nodejs/.test(content)|| /^完成$/.test(content)){
+		let nodeRoom = await Room.find({topic: "NodeJS学习交流群"})
+		if(nodeRoom){
+			feeToRoom(sender,nodeRoom) 
 		}
-		if(/nodejs/.test(content)|| /^完成$/.test(content)){
-			let nodeRoom = await Room.find({topic: "NodeJS学习交流群"})
-			if(nodeRoom){
-				feeToRoom(sender,nodeRoom) 
-			}
         }
     })
     .init()
