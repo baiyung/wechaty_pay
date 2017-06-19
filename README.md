@@ -22,7 +22,7 @@ var pool = mysql.createPool({
 ## 使用截图
 ![](https://github.com/baiyung/wechaty_pay/blob/master/image/使用流程.jpg)
 <div align="center">
-<a target="_blank" href="https://github.com/baiyung/wechaty_pay/blob/master/image/使用流程展示.mp4"><img src="https://raw.githubusercontent.com/chatie/wechaty/master/image/wechaty-logo-en.png" border=0 width="60%"></a>
+<a target="_blank" href="https://v.qq.com/x/page/c0516j6uph7.html"><img src="https://raw.githubusercontent.com/chatie/wechaty/master/image/wechaty-logo-en.png" border=0 width="60%"></a>
 </div>
 ## 说明
 本应用中的付费链接(payment.html)是根据测试需要写出的html页面，并不是真实的微信支付链接，使用时可根据需要修改。
