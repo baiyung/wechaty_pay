@@ -22,7 +22,7 @@ var pool = mysql.createPool({
 ## 使用截图
 ![](https://github.com/baiyung/wechaty_pay/blob/master/image/使用流程.jpg)
 <div align="center">
-<a target="_blank" href="https://v.qq.com/x/page/c0516j6uph7.html"><img src="https://raw.githubusercontent.com/chatie/wechaty/master/image/wechaty-logo-en.png" border=0 width="60%"></a>
+<a target="_blank" href="https://v.qq.com/x/page/c0516j6uph7.html"><img src="https://cloud.githubusercontent.com/assets/1361891/21722581/3ec957d0-d468-11e6-8888-a91c236e0ba2.jpg" border=0 width="60%"></a>
 </div>
 
 ## 说明
