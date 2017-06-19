@@ -19,7 +19,7 @@ var pool = mysql.createPool({
     --  若用户已经在会员群，回复"检测到你已经在群里啦！"，并在会员群提示<br/>
     --  若用户还未支付，发送支付链接给用户并提示"请您点击下面的链接完成付款操作，付款成功后记得回复我'完成'哦，之后我好将您拉入会员群"<br/>
     --  若用户已完成支付，回复"Nancy检测到你已经成功付款，正准备将您拉入群聊，稍安勿躁哦~",将用户拉入会员群并提示“欢迎加入NodeJS技术学习社群”<br/>
-## 使用截图
+## 使用截图&视频
 ![](https://github.com/baiyung/wechaty_pay/blob/master/image/使用流程.jpg)
 <div align="center">
 <a target="_blank" href="https://v.qq.com/x/page/c0516j6uph7.html"><img src="https://github.com/baiyung/wechaty_pay/blob/master/image/page.jpg" border=0 width="60%"></a>
